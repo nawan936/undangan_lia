@@ -1264,7 +1264,7 @@ var context = new AudioContext();
                     <p id="awal-fun-p-id3" style="font-size: 15px;">
                         Kepada   Yth.               </p>
                     <br>
-                    <h4 style="font-weight: bold; margin-top: -20px; font-size: 27px; color: #fff !important;" > -Nama Penerima</h4>
+                    <h4 id="nama_tamu_cover" style="font-weight: bold; margin-top: -20px; font-size: 27px; color: #fff !important;" > -Nama Penerima</h4>
                     <br>
                     <p id="awal-fun-p-id4" style="font-size: 10px; width: 80%; margin: 0 auto; padding-top: 2.5px;">
                         Tanpa Mengurangi Rasa Hormat, Kami Mengundang Bapak/Ibu/Saudara/i untuk Hadir di Acara Kami.                    </p>
@@ -3354,6 +3354,8 @@ $('#auto_scroll').on('click', function(e) {
             $("#kpdn").html(param)
             $("#kpd2").html(param)
         }
+
+        $("#nama_tamu_cover").text(param && param !== 'null' ? param : cekNama || '-Nama Penerima')
 
 
 
